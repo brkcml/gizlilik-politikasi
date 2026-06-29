@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Milyonluk Bilgi Yarışması</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --gold:    #C9A84C;
+    --gold-lt: #E8C96A;
+    --navy:    #050B1F;
+    --navy-2:  #0A1530;
+    --navy-3:  #0F1E3D;
+    --silver:  #8B9BB4;
+    --text:    #D6DEF0;
+    --white:   #F0F4FF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 16px;
+  }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(160deg, var(--navy-3) 0%, var(--navy) 100%);
+    border-bottom: 1px solid rgba(201,168,76,.25);
+    padding: 56px 24px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(201,168,76,.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,.4);
+    border-radius: 20px;
+    padding: 4px 14px;
+    margin-bottom: 20px;
+  }
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    color: var(--white);
+    line-height: 1.15;
+    max-width: 640px;
+    margin: 0 auto 14px;
+  }
+  header h1 em {
+    font-style: italic;
+    color: var(--gold-lt);
+  }
+  .meta {
+    font-size: 13px;
+    color: var(--silver);
+  }
+
+  /* ── Layout ── */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 100px;
+  }
+
+  /* ── Section ── */
+  section {
+    margin-bottom: 52px;
+  }
+  section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.35rem;
+    color: var(--white);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  section h2 .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(201,168,76,.15);
+    border: 1px solid rgba(201,168,76,.35);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--gold);
+    flex-shrink: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  section p {
+    color: var(--text);
+    margin-bottom: 12px;
+  }
+  section ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  section ul li {
+    margin-bottom: 8px;
+    color: var(--text);
+  }
+  section ul li::marker {
+    color: var(--gold);
+  }
+
+  /* ── Highlight box ── */
+  .highlight {
+    background: rgba(201,168,76,.07);
+    border: 1px solid rgba(201,168,76,.2);
+    border-left: 3px solid var(--gold);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-top: 8px;
+    font-size: 14.5px;
+    color: #BBC8E0;
+  }
+
+  /* ── Divider ── */
+  hr {
+    border: none;
+    border-top: 1px solid rgba(139,155,180,.15);
+    margin: 0 0 52px;
+  }
+
+  /* ── Contact box ── */
+  .contact-box {
+    background: var(--navy-2);
+    border: 1px solid rgba(201,168,76,.2);
+    border-radius: 8px;
+    padding: 28px 32px;
+    text-align: center;
+  }
+  .contact-box p {
+    font-size: 14px;
+    color: var(--silver);
+    margin-bottom: 10px;
+  }
+  .contact-box a {
+    color: var(--gold-lt);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .01em;
+  }
+  .contact-box a:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 28px 16px;
+    font-size: 12px;
+    color: var(--silver);
+    border-top: 1px solid rgba(139,155,180,.12);
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 480px) {
+    main { padding: 40px 18px 72px; }
+    header { padding: 44px 18px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Yasal Belge</div>
+  <h1>Gizlilik <em>Politikası</em></h1>
+  <p class="meta">Milyonluk Bilgi Yarışması &nbsp;·&nbsp; Son güncelleme: Haziran 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <p>
+      Bu gizlilik politikası, <strong>Milyonluk Bilgi Yarışması</strong> uygulamasının kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklamaktadır. Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+    </p>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2><span class="num">1</span> Toplanan Veriler</h2>
+    <p>Uygulama aşağıdaki verileri toplayabilir:</p>
+    <ul>
+      <li>Oyun istatistikleri ve en yüksek puanınız (cihazınızda yerel olarak saklanır)</li>
+      <li>Reklam gösterimi için cihaz tanımlayıcıları ve IP adresi (üçüncü taraf reklam sağlayıcıları aracılığıyla)</li>
+      <li>Uygulama kullanım verileri ve çökme raporları (anonim)</li>
+    </ul>
+    <div class="highlight">
+      Adınız, e-posta adresiniz veya telefon numaranız gibi kişisel kimlik bilgileri doğrudan tarafımızca toplanmamaktadır.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Reklamlar</h2>
+    <p>
+      Uygulamamız, hizmetlerin sürdürülebilirliğini sağlamak amacıyla <strong>banner reklamlar</strong> ve <strong>geçiş (interstitial) reklamlar</strong> içermektedir.
+    </p>
+    <p>Reklam sağlayıcıları (Google AdMob gibi) şu bilgileri toplayabilir:</p>
+    <ul>
+      <li>Reklam tanımlayıcısı (Advertising ID / IDFA)</li>
+      <li>Tahmini konum (IP adresi bazlı)</li>
+      <li>Cihaz türü, işletim sistemi ve dil bilgisi</li>
+      <li>Reklam etkileşim verileri (görüntüleme, tıklama)</li>
+    </ul>
+    <p>
+      Kişiselleştirilmiş reklam tercihlerinizi cihazınızın ayarlarından yönetebilirsiniz. Android cihazlarda <em>Ayarlar → Google → Reklamlar</em> yolunu izleyebilirsiniz.
+    </p>
+    <div class="highlight">
+      Reklam sağlayıcılarının gizlilik politikaları için Google'ın <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--gold-lt)">Gizlilik Politikası</a>'nı inceleyebilirsiniz.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Oyun deneyimini iyileştirmek ve hataları düzeltmek</li>
+      <li>Uygulama performansını analiz etmek</li>
+      <li>Kullanıcıya alakalı reklamlar göstermek</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Üçüncü Taraf Paylaşım</h2>
+    <p>
+      Kişisel verileriniz, yalnızca reklamcılık ve analitik hizmetleri için aşağıdaki kategorilerdeki üçüncü taraflarla paylaşılabilir:
+    </p>
+    <ul>
+      <li>Reklam ağları (ör. Google AdMob)</li>
+      <li>Analitik sağlayıcılar (ör. Firebase Analytics)</li>
+    </ul>
+    <p>Verileriniz hiçbir koşulda satılmaz veya ticari amaçla devredilmez.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Çocukların Gizliliği</h2>
+    <p>
+      Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. Ebeveyn ya da vasi iseniz ve çocuğunuzun veri paylaştığını düşünüyorsanız bizimle iletişime geçebilirsiniz.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Veri Güvenliği</h2>
+    <p>
+      Oyun verileri (puan, istatistik) yalnızca cihazınızda <em>SharedPreferences</em> ile saklanır ve sunucularımıza aktarılmaz. Üçüncü taraf hizmetler kendi güvenlik standartlarına tabi olup bu konuda ilgili sağlayıcıların politikaları geçerlidir.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Haklarınız</h2>
+    <ul>
+      <li>Reklam kişiselleştirmeyi devre dışı bırakabilirsiniz</li>
+      <li>Uygulama verilerini cihazınızdan silebilirsiniz (<em>Ayarlar → Uygulamalar → Veriyi Temizle</em>)</li>
+      <li>Herhangi bir veri talebi için aşağıdaki e-posta adresiyle iletişime geçebilirsiniz</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Politika Değişiklikleri</h2>
+    <p>
+      Bu politika zaman zaman güncellenebilir. Önemli değişiklikler olması durumunda uygulama üzerinden bildirim yapılacaktır. Politikanın güncel halini bu sayfadan her zaman inceleyebilirsiniz.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span> İletişim</h2>
+    <div class="contact-box">
+      <p>Gizlilik politikasıyla ilgili sorularınız için:</p>
+      <a href="mailto:brkcml@gmail.com">brkcml@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 Milyonluk Bilgi Yarışması &nbsp;·&nbsp; Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
